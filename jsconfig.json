@@ -3,5 +3,14 @@
     "paths": {
       "@/*": ["./*"]
     }
-  }
+  },
+  "include": [
+    "app/**/*",
+    "components/**/*",
+    "pages/**/*",
+    "public/**/*",
+    "styles/**/*",
+    "utils/**/*",
+    "tailwind.config.js"
+  ]
 }
