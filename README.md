@@ -6,7 +6,6 @@ A modern ticket management application built with **Next.js**, **Tailwind CSS**,
 
 ## Features
 - Create, view, and manage tickets.
-- Dark mode and light mode toggle.
 - Categorize tickets (e.g., Bug, Feature, Task).
 - Responsive design for mobile and desktop.
 - Modern UI with Tailwind CSS.
