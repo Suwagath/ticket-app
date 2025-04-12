@@ -1,34 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ticket Management App
 
-## Getting Started
+A modern ticket management application built with **Next.js**, **Tailwind CSS**, and **Font Awesome**. This app allows users to create, manage, and track tickets efficiently with a sleek and responsive UI.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
+- Create, view, and manage tickets.
+- Dark mode and light mode toggle.
+- Categorize tickets (e.g., Bug, Feature, Task).
+- Responsive design for mobile and desktop.
+- Modern UI with Tailwind CSS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Screenshots
+### Dashboard
+![Dashboard Screenshot](https://github.com/Suwagath/ticket-app/blob/a9b04586dabca2ef8f2ef7ca84206ee50aafb504/screenshots/dashboard_empty.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Ticket Creation
+![Ticket Creation Screenshot](https://github.com/Suwagath/ticket-app/blob/a9b04586dabca2ef8f2ef7ca84206ee50aafb504/screenshots/create_new_ticket.png)
 
-## Learn More
+## Populated Dashboard
+![Populated Dashboard Screenshot](https://github.com/Suwagath/ticket-app/blob/a9b04586dabca2ef8f2ef7ca84206ee50aafb504/screenshots/populated_dashboard.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Dashboard after deleting few tickets
+![Dashboard with few Tickets Screenshot](https://github.com/Suwagath/ticket-app/blob/a9b04586dabca2ef8f2ef7ca84206ee50aafb504/screenshots/dashboard_after_deleting_few_tickets.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Database collection (MongoDB Atlas)
+![Database Collection Screenshot](https://github.com/Suwagath/ticket-app/blob/a9b04586dabca2ef8f2ef7ca84206ee50aafb504/screenshots/mongod_db_atls.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Suwagath/ticket-app.git
+   cd ticket-app
+   ```
+2. Install Dependencies:
+   ```
+   npm i
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+4. Open the app in your browser:
+   ```
+   http://localhost:3000
+   ```
+   
+---
+
+## Usage
+1. Navigate to the dashboard to view all tickets.
+2. Click "Create Ticket" to add a new ticket.
+3. Update tickets by clicking on them
+
+---
+
+## Technologies Used
+Next.js: React framework for server-side rendering and static site generation.
+Tailwind CSS: Utility-first CSS framework for styling.
+Font Awesome: Icon library for modern UI components.
+
+---
+
+## License
+This project is licensed under the MIT License.
