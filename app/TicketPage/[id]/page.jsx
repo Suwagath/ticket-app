@@ -9,6 +9,8 @@ const getTicketById = async (id) => {
   if (!res.ok) {
     throw new Error("Failed to fetch ticket");
   }
+
+  return res.json();
 };
 
 const TicketPage = async ({ params }) => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProgessDisplay = ({ progress }) => {
+const ProgressDisplay = ({ progress }) => {
   return (
     <div className="w-full bg-gray-200 rounded-full h-2.5">
       <div
@@ -11,4 +11,4 @@ const ProgessDisplay = ({ progress }) => {
   );
 };
 
-export default ProgessDisplay;
+export default ProgressDisplay;
