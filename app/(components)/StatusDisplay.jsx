@@ -5,13 +5,13 @@ const StatusDisplay = ({ status }) => {
     let color = "bg-slate-700";
     switch (status.toLowerCase()) {
       case "not started":
-        color = "bg-red-400";
+        color = "bg-red-accent";
         break;
       case "in progress":
-        color = "bg-yellow-400";
+        color = "bg-yellow-accent";
         break;
       case "completed":
-        color = "bg-green-400";
+        color = "bg-green-accent";
         break;
       default:
         color = "bg-slate-700";

@@ -11,7 +11,7 @@ const EditTicketForm = ({ ticket }) => {
     priority: 1,
     progress: 0,
     status: "not started",
-    category: "Hardware Problem",
+    category: "Bug",
   };
 
   if (EDITMODE) {
@@ -65,12 +65,7 @@ const EditTicketForm = ({ ticket }) => {
     router.push("/");
   };
 
-  const categories = [
-    "Hardware Problem",
-    "Software Problem",
-    "Application Deveopment",
-    "Project",
-  ];
+  const categories = ["Bug", "Feature", "Task", "Enhancements"];
 
   return (
     <div className=" flex justify-center">
@@ -171,13 +166,13 @@ const EditTicketForm = ({ ticket }) => {
         />
         <label>Status</label>
         <select name="status" value={formData.status} onChange={handleChange}>
-          <option value="not started">Not Started</option>
-          <option value="started">Started</option>
-          <option value="done">Done</option>
+          <option value="not started">not Started</option>
+          <option value="in progress">in progress</option>
+          <option value="completed">completed</option>
         </select>
         <input
           type="submit"
-          className="btn max-w-xs"
+          className="btn max-w-xs mx-auto"
           value={EDITMODE ? "Update Ticket" : "Create Ticket"}
         />
       </form>

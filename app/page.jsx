@@ -27,6 +27,19 @@ const Dashboard = async () => {
 
   const tickets = data.tickets;
 
+  if (tickets.length === 0) {
+    return (
+      <div className="flex flex-col items-center justify-center h-full bg-page text-default-text p-6 rounded-lg shadow-md">
+        <p className="text-2xl font-semibold text-blue-accent mb-4">
+          No tickets found!
+        </p>
+        <p className="text-lg text-gray-500">
+          Create one to get started and manage your tasks.
+        </p>
+      </div>
+    );
+  }
+
   const uniqueCategories = [
     ...new Set(tickets?.map(({ category }) => category)),
   ];
@@ -38,7 +51,7 @@ const Dashboard = async () => {
           uniqueCategories?.map((uniqueCategory, categoryIndex) => (
             <div key={categoryIndex} className="mb-4">
               <h2>{uniqueCategory}</h2>
-              <div className="lg:grid grid-cols-2 xl:grid-cols-4 ">
+              <div className="lg:grid grid-cols-2 xl:grid-cols-4">
                 {tickets
                   .filter((ticket) => ticket.category === uniqueCategory)
                   .map((filteredTicket, _index) => (
